@@ -1,0 +1,42 @@
+.article {
+  cursor: pointer;
+}
+.list {
+  cursor: pointer;
+}
+.form {
+  position: relative;
+}
+
+#search-list {
+  padding-left: 0px !important;
+}
+
+.form ul{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -1%;
+  width: 250px;
+  background-color: #fff;
+  list-style: none;
+  z-index: 999;
+  border: 1px solid #000;
+}
+
+.form ul li {
+  padding: 10px 5px;
+  float: left;
+  width: 250px;
+  color: black;
+  border-bottom: 1px solid #000;
+}
+
+.form ul li:last-child {
+  border: none;
+}
+
+.form ul li:hover {
+  background-color: #ccc;
+  transition: all 0.4s ease-in-out;
+}

@@ -5,7 +5,7 @@ $(".search").keyup(function () {
   let $search = $(this).val();
   if ($search !== "") {
     $.ajax({
-      url: `http://api.tvmaze.com/search/shows?q=${$search}`,
+      url: `https://api.tvmaze.com/search/shows?q=${$search}`,
       type: "GET",
       dataType: "json",
     }).done(function (response) {

@@ -13,7 +13,7 @@ let $show_cast = $("#show-cast");
 /* function for display tvshow image and summary */
 function displayTvShow() {
   $.ajax({
-    url: `http://api.tvmaze.com/shows/${$show_id}`,
+    url: `https://api.tvmaze.com/shows/${$show_id}`,
     type: "GET",
     dataType: "json",
   }).done(function (response) {
@@ -29,7 +29,7 @@ function displayTvShow() {
 /* function for display tvshow seasons */
 function displayTvList() {
   $.ajax({
-    url: `http://api.tvmaze.com/shows/${$show_id}/seasons`,
+    url: `https://api.tvmaze.com/shows/${$show_id}/seasons`,
     type: "GET",
     dataType: "json",
   }).done(function (response) {
@@ -51,7 +51,7 @@ function displayTvList() {
 /* function for display tvshow cast */
 function displayTvCast() {
   $.ajax({
-    url: `http://api.tvmaze.com/shows/${$show_id}/cast`,
+    url: `https://api.tvmaze.com/shows/${$show_id}/cast`,
     type: "GET",
     dataType: "json",
   }).done(function (response) {

@@ -8,7 +8,7 @@ let $main_section = $("#main-section");
 /* Funcion for getting data for index.html and display data */
 function loadTvShows() {
   $.ajax({
-    url: `http://api.tvmaze.com/shows`,
+    url: `https://api.tvmaze.com/shows`,
     type: "GET",
     dataType: "json",
   }).done(function (response) {

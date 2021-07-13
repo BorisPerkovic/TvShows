@@ -1,42 +1,52 @@
+body {
+  padding-bottom: 77px; }
+
+#spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%; }
+
+.navbar {
+  background-color: #212529; }
+  .navbar h2 {
+    color: #fff; }
+
 .article {
-  cursor: pointer;
-}
+  cursor: pointer; }
+
 .list {
-  cursor: pointer;
-}
+  cursor: pointer; }
+
 .form {
-  position: relative;
-}
+  position: relative; }
+  .form ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -1%;
+    width: 250px;
+    background-color: #fff;
+    list-style: none;
+    z-index: 999;
+    border: 1px solid #000; }
+  .form li {
+    padding: 10px 5px;
+    float: left;
+    width: 250px;
+    color: black;
+    border-bottom: 1px solid #000; }
+  .form li:last-child {
+    border: none; }
+  .form li:hover {
+    background-color: #ccc;
+    transition: all 0.2s ease-in-out; }
 
 #search-list {
-  padding-left: 0px !important;
-}
+  padding-left: 0px !important; }
 
-.form ul{
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: -1%;
-  width: 250px;
-  background-color: #fff;
-  list-style: none;
-  z-index: 999;
-  border: 1px solid #000;
-}
+footer {
+  background-color: #212529; }
+  footer p {
+    color: #fff; }
 
-.form ul li {
-  padding: 10px 5px;
-  float: left;
-  width: 250px;
-  color: black;
-  border-bottom: 1px solid #000;
-}
-
-.form ul li:last-child {
-  border: none;
-}
-
-.form ul li:hover {
-  background-color: #ccc;
-  transition: all 0.4s ease-in-out;
-}
+/*# sourceMappingURL=main.css.map */

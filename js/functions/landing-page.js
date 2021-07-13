@@ -8,7 +8,7 @@ let $main_section = $("#main-section");
 /* Funcion for getting data for index.html and display data */
 function loadTvShows() {
   $.ajax({
-    url: `https://api.tvmaze.com/shows`,
+    url: `http://api.tvmaze.com/shows`,
     type: "GET",
     dataType: "json",
   }).done(function (response) {
@@ -26,8 +26,9 @@ function loadTvShows() {
       showInstance.addShow($create_shows);
     });
 
+    $("#spinner").empty();
     $main_section.append(showInstance.getShow());
-
+    
     $(".article").click(function () {
       let $show_id = $(this).attr("data-id");
       let $show_rating = $(this).attr("data-rating");
@@ -39,5 +40,6 @@ function loadTvShows() {
   });
 
 }
+
 
 loadTvShows();

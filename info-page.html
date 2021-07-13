@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
 
   <!-- Jquery CDN -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -27,9 +26,9 @@
 <!--===============================================
   NAV-BAR SECTION
 =============================================== -->
-<nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
   <div class="container">
-    <a class="navbar-brand" href="index.html"><h2 class="text-white">TvShows</h2></a>
+    <a class="navbar-brand" href="index.html"><h2>BitShow</h2></a>
       <form class="d-flex ms-auto form">
         <input class="form-control search" type="search" placeholder="Search" aria-label="Search">
         <ul id="search-list">
@@ -39,9 +38,19 @@
 </nav>
 <!-- end of nav-bar -->
 
+<!-- loading spinner -->
+
+<div id="spinner">
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+
+<!-- end loading spinner -->
+
 <!-- heading title -->
 
-  <h1 class="text-center my-4" id="show-title">  <span id="show-rating"></span></h1>
+  <h1 class="display-3 text-center my-4" id="show-title">  <span id="show-rating"></span></h1>
 
 <!-- end heading title  -->
 
@@ -84,10 +93,10 @@
 <!--===============================================
   FOOTER SECTION
 =============================================== -->
-<footer class="container-fluid bg-dark pt-4 pb-2">
+<footer class="container-fluid pt-3 pb-1 fixed-bottom">
 
-<div class="container text-center text-white">
-  <p>Copyright &copy; Bit Student 2021</p>
+<div class="container text-center">
+  <p>Copyright &copy; Boris Perkovic -  Bit Student 2021</p>
 </div>
 
 </footer>

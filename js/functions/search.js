@@ -5,14 +5,13 @@ $(".search").keyup(function () {
   let $search = $(this).val();
   if ($search !== "") {
     $.ajax({
-      url: `https://api.tvmaze.com/search/shows?q=${$search}`,
+      url: `http://api.tvmaze.com/search/shows?q=${$search}`,
       type: "GET",
       dataType: "json",
     }).done(function (response) {
 
       let $html = "";
-
-      console.log(response);
+      
       $search_list.empty();
       $search_list.fadeIn();
       response.forEach(function (element) {
